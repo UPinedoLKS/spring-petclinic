@@ -93,6 +93,7 @@ public class Owner extends Person {
 	}
 
 	public void addPet(Pet pet) {
+		Integer test;
 		if (pet.isNew()) {
 			getPets().add(pet);
 		}
