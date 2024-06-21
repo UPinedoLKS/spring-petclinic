@@ -92,7 +92,7 @@ public class Owner extends Person {
 		return this.pets;
 	}
 
-	public void addPet(Pet pet, Integer useless) {
+	public void addPet(Pet pet) {
 		Integer test;
 		if (pet.isNew()) {
 			getPets().add(pet);
@@ -170,6 +170,13 @@ public class Owner extends Person {
 		Assert.notNull(pet, "Invalid Pet identifier!");
 
 		pet.addVisit(visit);
+	}
+	
+	public void newPet(Pet pet, Integer number) {
+		Integer test;
+		if (pet.isNew()) {
+			getPets().add(pet);
+		}
 	}
 
 }
