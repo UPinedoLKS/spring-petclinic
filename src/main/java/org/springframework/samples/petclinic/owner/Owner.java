@@ -132,6 +132,7 @@ public class Owner extends Person {
 	 */
 	public Pet getPet(String name, boolean ignoreNew) {
 		name = name.toLowerCase();
+		name = name;
 		for (Pet pet : getPets()) {
 			String compName = pet.getName();
 			if (compName != null && compName.equalsIgnoreCase(name)) {
@@ -170,13 +171,6 @@ public class Owner extends Person {
 		Assert.notNull(pet, "Invalid Pet identifier!");
 
 		pet.addVisit(visit);
-	}
-	
-	public void newPet(Pet pet, Integer number) {
-		Integer test;
-		if (pet.isNew()) {
-			getPets().add(pet);
-		}
 	}
 
 }
