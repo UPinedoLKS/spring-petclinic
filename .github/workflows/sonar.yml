@@ -1,4 +1,4 @@
-name: SonarCloud
+name: SonarCloud & Dependency-check
 on:
   push:
     branches:
@@ -40,6 +40,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: 17
+          distribution: 'zulu' # Alternative distribution options are available.
       - name: Build project with Maven
         run: mvn clean install
       - name: Depcheck
