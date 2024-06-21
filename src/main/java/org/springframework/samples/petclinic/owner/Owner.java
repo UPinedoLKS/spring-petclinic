@@ -92,7 +92,7 @@ public class Owner extends Person {
 		return this.pets;
 	}
 
-	public void addPet(Pet pet) {
+	public void addPet(Pet pet, Integer useless) {
 		Integer test;
 		if (pet.isNew()) {
 			getPets().add(pet);
