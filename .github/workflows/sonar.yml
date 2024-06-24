@@ -44,7 +44,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: 17
-          distribution: 'zulu' # Alternative distribution options are available.
+          distribution: 'zulu'
       - name: Build project with Maven
         run: mvn clean install
       - name: DepCheck
