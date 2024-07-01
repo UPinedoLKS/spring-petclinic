@@ -9,8 +9,8 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features/petclinic")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "petclinic.glue")
-@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME,value = "pretty, html:target/cucumber-report/cucumber.html")
-@IncludeTags(value = {"pet"})
+@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, html:target/cucumber-report/cucumber.html")
+@IncludeTags(value = { "pet" })
 public class PetTest {
 
 }
