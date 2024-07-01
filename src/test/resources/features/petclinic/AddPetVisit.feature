@@ -1,3 +1,4 @@
+@cucumber
 Feature: Add Pet Visit
 
   @pet

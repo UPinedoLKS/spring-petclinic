@@ -9,8 +9,7 @@ import io.cucumber.java.en.Given;
 
 public class Home extends SeleniumDriver {
 
-	By menuFindOwners = By
-		.xpath("//div[@id='main-navbar']/ul[@class='nav navbar-nav me-auto']/li[@class='nav-item'][2]");
+	By menuFindOwners = By.xpath("//div[@id='main-navbar']/ul[@class='nav navbar-nav me-auto']/li[@class='nav-item'][2]");
 
 	@Before()
 	public void initialization() {

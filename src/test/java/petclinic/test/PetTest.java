@@ -1,5 +1,6 @@
 package petclinic.test;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.platform.suite.api.*;
 
 import static io.cucumber.junit.platform.engine.Constants.GLUE_PROPERTY_NAME;
