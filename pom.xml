@@ -27,6 +27,9 @@
 		<!-- Web dependencies -->
 		<webjars-bootstrap.version>5.3.3</webjars-bootstrap.version>
 		<webjars-font-awesome.version>4.7.0</webjars-font-awesome.version>
+		
+		<!-- Test versions -->
+		<cucumber.version>7.14.0</cucumber.version>
 
 		<checkstyle.version>10.16.0</checkstyle.version>
 		<jacoco.version>0.8.12</jacoco.version>
@@ -149,6 +152,75 @@
 		    <artifactId>log4j-core</artifactId>
 		    <version>2.14.1</version>
 		</dependency>
+		    
+		 <!-- JUnit 5-->
+		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter</artifactId>
+		    <version>5.10.1</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.junit.platform</groupId>
+		    <artifactId>junit-platform-suite</artifactId>
+		    <version>1.10.1</version>
+		    <scope>test</scope>
+		</dependency>
+		<!-- Cucumber-->
+		<dependency>
+		    <groupId>io.cucumber</groupId>
+		    <artifactId>cucumber-java</artifactId>
+		    <version>${cucumber.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit-platform-engine</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>io.cucumber</groupId>
+		    <artifactId>cucumber-picocontainer</artifactId>
+		    <version>${cucumber.version}</version>
+		</dependency>
+		<!-- Selenium-->
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <version>4.15.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>io.github.bonigarcia</groupId>
+		    <artifactId>webdrivermanager</artifactId>
+		    <version>5.6.1</version>
+		</dependency>
+		<!-- para reportes HTML con cucumber -->
+		<dependency>
+		    <groupId>net.masterthought</groupId>
+		    <artifactId>cucumber-reporting</artifactId>
+		    <version>5.7.8</version>
+		</dependency>
+		<dependency>
+			<groupId>com.vimalselvam</groupId>
+			<artifactId>cucumber-extentsreport</artifactId>
+			<version>3.1.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.aventstack</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>5.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.13.0</version>
+		</dependency>
+		    
 	</dependencies>
 
 	<build>
